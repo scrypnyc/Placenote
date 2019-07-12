@@ -24,13 +24,13 @@ class TableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
-        cell?.textLabel?.text = placeNames[indexPath.row]
-        cell?.textLabel?.textColor = .white
-        cell?.imageView?.image = UIImage(named: placeNames[indexPath.row])
-        cell?.imageView?.layer.cornerRadius = 85 / 2
-        cell?.imageView?.clipsToBounds = true
-        return cell!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! TableViewCell
+        cell.nameLabel.text = placeNames[indexPath.row]
+        cell.nameLabel.textColor = .white
+        cell.imageCell.image = UIImage(named: placeNames[indexPath.row])
+        cell.imageCell.layer.cornerRadius = cell.imageCell.frame.size.height / 2
+        cell.imageCell.clipsToBounds = true
+        return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

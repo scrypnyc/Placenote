@@ -28,6 +28,12 @@ class TableViewController: UITableViewController {
         cell?.textLabel?.text = placeNames[indexPath.row]
         cell?.textLabel?.textColor = .white
         cell?.imageView?.image = UIImage(named: placeNames[indexPath.row])
+        cell?.imageView?.layer.cornerRadius = 85 / 2
+        cell?.imageView?.clipsToBounds = true
         return cell!
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 85
     }
 }

@@ -27,6 +27,7 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         cell?.textLabel?.text = placeNames[indexPath.row]
         cell?.textLabel?.textColor = .white
+        cell?.imageView?.image = UIImage(named: placeNames[indexPath.row])
         return cell!
     }
 }

@@ -10,30 +10,29 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    let placeNames = ["Milk Bar", "Come and Stay", "One Love Coffee", "Любимый Дядя", "Косатка", "WhiteBeard BlackBird"]
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    let places = Place.getPlaces()
+    
     // MARK: Table View
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return placeNames.count
+        return places.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! TableViewCell
-        cell.nameLabel.text = placeNames[indexPath.row]
+        cell.nameLabel.text = places[indexPath.row].name
+        cell.locationLabel.text = places[indexPath.row].location
+        cell.typeLabel.text = places[indexPath.row].type
         cell.nameLabel.textColor = .white
-        cell.imageCell.image = UIImage(named: placeNames[indexPath.row])
+        cell.imageCell.image = UIImage(named: places[indexPath.row].image)
+        
         cell.imageCell.layer.cornerRadius = cell.imageCell.frame.size.height / 2
         cell.imageCell.clipsToBounds = true
         return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 85
     }
 }

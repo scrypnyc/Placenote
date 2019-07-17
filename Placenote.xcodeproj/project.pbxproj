@@ -14,6 +14,7 @@
 		E5F2DF6822D4F2F9006636B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5F2DF6722D4F2F9006636B0 /* Assets.xcassets */; };
 		E5F2DF6B22D4F2F9006636B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5F2DF6922D4F2F9006636B0 /* LaunchScreen.storyboard */; };
 		E5F2DF7322D4F52D006636B0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2DF7222D4F52D006636B0 /* TableViewController.swift */; };
+		E5FF7D9422DE41EF00AC54BE /* AddPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FF7D9322DE41EF00AC54BE /* AddPlaceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E5F2DF6A22D4F2F9006636B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5F2DF6C22D4F2F9006636B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5F2DF7222D4F52D006636B0 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = ../TableViewController.swift; sourceTree = "<group>"; };
+		E5FF7D9322DE41EF00AC54BE /* AddPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				E5F2DF6022D4F2F6006636B0 /* AppDelegate.swift */,
 				E5F2DF7222D4F52D006636B0 /* TableViewController.swift */,
 				E53EE79822D92CF800BCBB4B /* TableViewCell.swift */,
+				E5FF7D9322DE41EF00AC54BE /* AddPlaceViewController.swift */,
 				E514B9B322DB8A5A00ADF809 /* PlaceModel.swift */,
 				E5F2DF6422D4F2F6006636B0 /* Main.storyboard */,
 				E5F2DF6722D4F2F9006636B0 /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5FF7D9422DE41EF00AC54BE /* AddPlaceViewController.swift in Sources */,
 				E53EE79922D92CF800BCBB4B /* TableViewCell.swift in Sources */,
 				E514B9B422DB8A5A00ADF809 /* PlaceModel.swift in Sources */,
 				E5F2DF6122D4F2F6006636B0 /* AppDelegate.swift in Sources */,

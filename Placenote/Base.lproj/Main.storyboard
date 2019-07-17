@@ -252,13 +252,23 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="HlZ-Qn-ofC">
                             <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="bDb-GU-Lj4" kind="unwind" unwindAction="cancelButton:" id="urj-gy-ywN"/>
+                                <action selector="cancelAction:" destination="FpX-8I-qvG" id="p3c-Uu-ezh"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="njf-2G-5G5">
                             <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="bDb-GU-Lj4" kind="unwind" unwindAction="unwindSegue:" id="Nm0-GL-Ujo"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="placeImage" destination="efe-J0-9bT" id="dMe-8v-fhK"/>
+                        <outlet property="placeLocation" destination="l7n-Md-wpJ" id="Soo-9C-bCE"/>
+                        <outlet property="placeName" destination="WbM-Pf-Tgw" id="j3h-Wb-E7K"/>
+                        <outlet property="placeType" destination="Gdf-s0-9VB" id="G9F-Gw-QL0"/>
+                        <outlet property="saveButton" destination="njf-2G-5G5" id="4HW-Xu-8ai"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bT9-W3-6P7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="bDb-GU-Lj4" userLabel="Exit" sceneMemberID="exit"/>

@@ -15,7 +15,7 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
     }
     
-    let places = Place.getPlaces()
+    var places = Place.getPlaces()
     
     // MARK: Table View
     
@@ -25,16 +25,31 @@ class TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! TableViewCell
-        cell.nameLabel.text = places[indexPath.row].name
-        cell.locationLabel.text = places[indexPath.row].location
-        cell.typeLabel.text = places[indexPath.row].type
-        cell.nameLabel.textColor = .white
-        cell.imageCell.image = UIImage(named: places[indexPath.row].image)
+        
+        let place = places[indexPath.row]
+        
+        cell.nameLabel.text = place.name
+        cell.locationLabel.text = place.location
+        cell.typeLabel.text = place.type
+        
+        if place.image == nil {
+            cell.imageCell.image = UIImage(named: place.placeNames!)
+        } else {
+            cell.imageCell.image = place.image
+        }
+        
         
         cell.imageCell.layer.cornerRadius = cell.imageCell.frame.size.height / 2
         cell.imageCell.clipsToBounds = true
         return cell
     }
     
-    @IBAction func cancelButton(_ segue: UIStoryboardSegue) {}
-}
+    @IBAction func unwindSegue(_ segue: UIStoryboardSegue) {
+        
+        guard let newPlaceVC = segue.source as? AddPlaceViewController else { return }
+        
+        newPlaceVC.saveNewPlace()
+        places.append(newPlaceVC.newPlace!)
+        tableView.reloadData()
+        }
+    }

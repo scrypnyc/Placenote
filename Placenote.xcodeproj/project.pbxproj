@@ -15,9 +15,13 @@
 		E5F2DF6B22D4F2F9006636B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5F2DF6922D4F2F9006636B0 /* LaunchScreen.storyboard */; };
 		E5F2DF7322D4F52D006636B0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2DF7222D4F52D006636B0 /* TableViewController.swift */; };
 		E5FF7D9422DE41EF00AC54BE /* AddPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FF7D9322DE41EF00AC54BE /* AddPlaceViewController.swift */; };
+		F7F1ECE2D947D6864B1DD230 /* Pods_Placenote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E9FCAF4BB470C3CDE55A66 /* Pods_Placenote.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17E9FCAF4BB470C3CDE55A66 /* Pods_Placenote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Placenote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		449E0FAA61281737C6FA4FCE /* Pods-Placenote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Placenote.debug.xcconfig"; path = "Target Support Files/Pods-Placenote/Pods-Placenote.debug.xcconfig"; sourceTree = "<group>"; };
+		E3A919A2DEF43850FA090246 /* Pods-Placenote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Placenote.release.xcconfig"; path = "Target Support Files/Pods-Placenote/Pods-Placenote.release.xcconfig"; sourceTree = "<group>"; };
 		E514B9B322DB8A5A00ADF809 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		E53EE79822D92CF800BCBB4B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		E5F2DF5D22D4F2F6006636B0 /* Placenote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Placenote.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7F1ECE2D947D6864B1DD230 /* Pods_Placenote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63A1FBB5B49A341C41554F78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17E9FCAF4BB470C3CDE55A66 /* Pods_Placenote.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF2891BCE14D86DB04F112BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				449E0FAA61281737C6FA4FCE /* Pods-Placenote.debug.xcconfig */,
+				E3A919A2DEF43850FA090246 /* Pods-Placenote.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E5F2DF5422D4F2F6006636B0 = {
 			isa = PBXGroup;
 			children = (
 				E5F2DF5F22D4F2F6006636B0 /* Placenote */,
 				E5F2DF5E22D4F2F6006636B0 /* Products */,
+				BF2891BCE14D86DB04F112BD /* Pods */,
+				63A1FBB5B49A341C41554F78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5F2DF6F22D4F2F9006636B0 /* Build configuration list for PBXNativeTarget "Placenote" */;
 			buildPhases = (
+				B7AEAE9309EA51DBBEFA1283 /* [CP] Check Pods Manifest.lock */,
 				E5F2DF5922D4F2F6006636B0 /* Sources */,
 				E5F2DF5A22D4F2F6006636B0 /* Frameworks */,
 				E5F2DF5B22D4F2F6006636B0 /* Resources */,
+				18874B33650B1355280ABE8F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,6 +165,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18874B33650B1355280ABE8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Placenote/Pods-Placenote-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Placenote/Pods-Placenote-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Placenote/Pods-Placenote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7AEAE9309EA51DBBEFA1283 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Placenote-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E5F2DF5922D4F2F6006636B0 /* Sources */ = {
@@ -292,6 +361,7 @@
 		};
 		E5F2DF7022D4F2F9006636B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 449E0FAA61281737C6FA4FCE /* Pods-Placenote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,6 +380,7 @@
 		};
 		E5F2DF7122D4F2F9006636B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3A919A2DEF43850FA090246 /* Pods-Placenote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

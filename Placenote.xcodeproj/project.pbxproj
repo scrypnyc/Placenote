@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		E514B9B422DB8A5A00ADF809 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E514B9B322DB8A5A00ADF809 /* PlaceModel.swift */; };
 		E53EE79922D92CF800BCBB4B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53EE79822D92CF800BCBB4B /* TableViewCell.swift */; };
+		E579EBCE22E4673900B2B22D /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E579EBCD22E4673800B2B22D /* StorageManager.swift */; };
 		E5F2DF6122D4F2F6006636B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2DF6022D4F2F6006636B0 /* AppDelegate.swift */; };
 		E5F2DF6622D4F2F6006636B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5F2DF6422D4F2F6006636B0 /* Main.storyboard */; };
 		E5F2DF6822D4F2F9006636B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5F2DF6722D4F2F9006636B0 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		E3A919A2DEF43850FA090246 /* Pods-Placenote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Placenote.release.xcconfig"; path = "Target Support Files/Pods-Placenote/Pods-Placenote.release.xcconfig"; sourceTree = "<group>"; };
 		E514B9B322DB8A5A00ADF809 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		E53EE79822D92CF800BCBB4B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		E579EBCD22E4673800B2B22D /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		E5F2DF5D22D4F2F6006636B0 /* Placenote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Placenote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5F2DF6022D4F2F6006636B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5F2DF6522D4F2F6006636B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,7 +62,6 @@
 				449E0FAA61281737C6FA4FCE /* Pods-Placenote.debug.xcconfig */,
 				E3A919A2DEF43850FA090246 /* Pods-Placenote.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -90,6 +91,7 @@
 				E53EE79822D92CF800BCBB4B /* TableViewCell.swift */,
 				E5FF7D9322DE41EF00AC54BE /* AddPlaceViewController.swift */,
 				E514B9B322DB8A5A00ADF809 /* PlaceModel.swift */,
+				E579EBCD22E4673800B2B22D /* StorageManager.swift */,
 				E5F2DF6422D4F2F6006636B0 /* Main.storyboard */,
 				E5F2DF6722D4F2F9006636B0 /* Assets.xcassets */,
 				E5F2DF6922D4F2F9006636B0 /* LaunchScreen.storyboard */,
@@ -216,6 +218,7 @@
 				E5FF7D9422DE41EF00AC54BE /* AddPlaceViewController.swift in Sources */,
 				E53EE79922D92CF800BCBB4B /* TableViewCell.swift in Sources */,
 				E514B9B422DB8A5A00ADF809 /* PlaceModel.swift in Sources */,
+				E579EBCE22E4673900B2B22D /* StorageManager.swift in Sources */,
 				E5F2DF6122D4F2F6006636B0 /* AppDelegate.swift in Sources */,
 				E5F2DF7322D4F52D006636B0 /* TableViewController.swift in Sources */,
 			);

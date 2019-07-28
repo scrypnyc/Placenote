@@ -10,7 +10,6 @@ import UIKit
 
 class AddPlaceViewController: UITableViewController {
     
-    var newPlace = Place()
     var imageIsChange = false
 
     @IBOutlet weak var saveButton: UIBarButtonItem!
@@ -70,11 +69,15 @@ class AddPlaceViewController: UITableViewController {
             image = #imageLiteral(resourceName: "image")
         }
         
-//        newPlace = Place(name: placeName.text!,
-//                         location: placeLocation.text,
-//                         type: placeType.text,
-//                         image: image,
-//                         placeNames: nil)
+        let imageData = image?.pngData()
+        
+        let newPlace = Place(name: placeName.text!,
+                             location: placeLocation.text,
+                             type: placeType.text,
+                             imageData: imageData)
+        
+        StorageManager.saveObject(newPlace)
+
     }
     
     

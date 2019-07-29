@@ -77,6 +77,7 @@
                                     <outlet property="locationLabel" destination="rfI-EY-eTd" id="UIj-Dv-aFg"/>
                                     <outlet property="nameLabel" destination="hta-sz-H9A" id="M02-Fb-2KH"/>
                                     <outlet property="typeLabel" destination="LFa-W6-JxG" id="rHo-IX-l5X"/>
+                                    <segue destination="FpX-8I-qvG" kind="show" identifier="showDetail" id="3yE-jB-m7Y"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -326,4 +327,7 @@
     <resources>
         <image name="add" width="50" height="50"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="3yE-jB-m7Y"/>
+    </inferredMetricsTieBreakers>
 </document>

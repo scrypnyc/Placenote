@@ -87,6 +87,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Placenote" id="Voc-0C-fP9">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="icons8-sorting_arrows" id="h3k-js-3sC">
+                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="reverseSorting:" destination="gZV-fS-idO" id="Vo1-wV-xuF"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="7Le-Vp-w0X">
                             <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -94,6 +100,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="sortingButton" destination="h3k-js-3sC" id="GUF-Bb-PyA"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iZM-WD-w80" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -274,7 +283,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bT9-W3-6P7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="bDb-GU-Lj4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="924" y="135.38230884557723"/>
+            <point key="canvasLocation" x="1943" y="91"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5Br-zX-YuH">
@@ -321,11 +330,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rJq-pb-v6C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-15" y="137"/>
+            <point key="canvasLocation" x="924" y="92"/>
         </scene>
     </scenes>
     <resources>
         <image name="add" width="50" height="50"/>
+        <image name="icons8-sorting_arrows" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="3yE-jB-m7Y"/>

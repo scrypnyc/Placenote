@@ -11,7 +11,11 @@ import RealmSwift
 
 class TableViewController: UITableViewController {
     
+    
+    @IBOutlet weak var sortingButton: UIBarButtonItem!
+    
     var places: Results<Place>!
+    var ascendingSorting = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,4 +78,14 @@ class TableViewController: UITableViewController {
         tableView.reloadData()
         }
     
+    @IBAction func reverseSorting(_ sender: Any) {
+        
+        ascendingSorting.toggle()
+        sorting()
     }
+    
+    private func sorting() {
+
+        tableView.reloadData()
+    }
+}

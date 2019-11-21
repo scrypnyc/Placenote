@@ -4,7 +4,7 @@
 target 'Placenote' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-	pod 'RealmSwift'
+	pod ‘RealmSwift’, ‘~> 3.18’
 
   # Pods for Placenote
 
